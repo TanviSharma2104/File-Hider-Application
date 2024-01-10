@@ -50,7 +50,7 @@ public class SendOTPService {
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 
             // Set Subject: header field
-            message.setSubject("File Enc ka OTP");
+            message.setSubject("File Hider Application OTP");
 
             // Now set the actual message
             message.setText("Your One time Password for File Enc app is " + genOTP);
@@ -58,7 +58,7 @@ public class SendOTPService {
             System.out.println("sending...");
             // Send message
             Transport.send(message);
-            System.out.println("Sent message successfully....");
+            System.out.println("Message sent successfully....");
         } catch (MessagingException mex) {
             mex.printStackTrace();
         }
