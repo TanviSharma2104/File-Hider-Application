@@ -77,6 +77,8 @@ public class UserView {
                         }
                     } catch (SQLException e) {
                         e.printStackTrace();
+                    }catch (IOException e){
+                        e.printStackTrace();
                     }
 
                 }

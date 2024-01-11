@@ -42,7 +42,7 @@ public class Welcome {
             User user=new User(name,email);
             int response= UserService.saveUser(user);
             switch (response){
-                case 0 -> System.out.println("user registered");
+                case 0 -> System.out.println("User registered");
                 case 1-> System.out.println("User already exists");
             }
         }

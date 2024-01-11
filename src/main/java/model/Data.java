@@ -12,7 +12,7 @@ public class Data {
         this.path = path;
     }
 
-    public Data(int id, String fileName, String email, String path) {
+    public Data(int id, String fileName, String path,String email) {
         this.id = id;
         this.fileName = fileName;
         this.email = email;
